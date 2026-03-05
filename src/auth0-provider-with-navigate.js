@@ -22,10 +22,9 @@ export const Auth0ProviderWithNavigate = ({ children }) => {
 
   return (
     <Auth0Provider
-      domain={domain}
-      clientId={clientId}
-      redirectUri={redirectUri}
-      onRedirectCallback={onRedirectCallback}
+      domain="dev-j0podihq6bzun606.us.auth0.com"
+      clientId="B2sv3YdPzUlJhDymIMbX6SsFmASDjqdl"
+      authorizationParams={{ redirect_uri: window.location.origin }}
     >
       {children}
     </Auth0Provider>
